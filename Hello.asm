@@ -1,3 +1,6 @@
+;For Linux i386 on Intel x86
+;(Not)Made By Me
+;Nanun Barboda.
 section .data
 	msg db "Hello World",0x0A
 
