@@ -1,7 +1,7 @@
 ;MADE BY williameom#4444
 section .data
-    msg db "Hello Nebie",0x0A
-    msg1 db "Welcome To HKDev",0x0
+    msg db "Hello Newbie",0x0A
+    msg1 db "Welcome To HKDev",0x0A
 
 section .text
     global _start
@@ -12,7 +12,7 @@ _start:
     mov eax, 4
     mov ebx, 1
     mov ecx, msg
-    mov edx, 12
+    mov edx, 13
     int 0x80
 
     ;msg1 output
