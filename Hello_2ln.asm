@@ -14,7 +14,7 @@ _start:
     mov edx, 16
     int 0x80
 
-    mov eax, 6 ;needs to clear eax regester
+    mov eax, 6 ;needs to close eax regester
 
     ;msg1 output
     mov eax, 4
