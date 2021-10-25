@@ -17,7 +17,7 @@ section .bss
 segment .text
 global start
 start:
-  mov ebx, 100
+  mov ebx, 100 ;bottles + 1
   mov ecx, ebx
 makju:
   sub ebx, 1
