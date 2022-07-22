@@ -8,12 +8,12 @@ ehdr:						                ; elf32_ehdr
 		dw 2				                 ; e_type
 		dw 3				                 ; e_machine
 		dd 1				                 ; e_version
-		dd _start			               ; e_entry
-		dd phdr - $$			           ; e_phoff
+		dd _start			                 ; e_entry
+		dd phdr - $$			           	 ; e_phoff
 		dd 0				                 ; e_shoff
 		dd 0 				                 ; e_flags
-		dw ehdrsize			             ; e_ehsize
-		dw phdrsize			             ; e_phentsize
+		dw ehdrsize			                 ; e_ehsize
+		dw phdrsize			                 ; e_phentsize
 		dw 1				                 ; e_phnum
 		dw 0				                 ; e_shentsize
 		dw 0				                 ; e_shnum
@@ -26,10 +26,10 @@ phdr:						                 ; elf32_Phdr
 		dd 0				                 ; p_offset
 		dd $$				                 ; p_vaddr
 		dd $$				                 ; p_paddr
-		dd filesize			             ; p_filesz
-		dd filesize			             ; p_memsz
+		dd filesize			                 ; p_filesz
+		dd filesize			                 ; p_memsz
 		dd 5				                 ; p_flags
-		dd 0x1000			               ; p_align
+		dd 0x1000			                 ; p_align
 
 phdrsize	equ $ - phdr
 
