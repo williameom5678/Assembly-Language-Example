@@ -2,8 +2,8 @@
 
 	org 0x08048000
 
-ehdr:						                ; elf32_ehdr
-	  db 0x7F, "ELF", 1, 1, 1, 0	; e_ident
+ehdr:						                 ; elf32_ehdr
+	  	db 0x7F, "ELF", 1, 1, 1, 0			 ; e_ident
 	times 8 db 0
 		dw 2				                 ; e_type
 		dw 3				                 ; e_machine
